@@ -1,0 +1,4 @@
+c:\Users\fpettigrosso\ws\ProcessingFun\obj\Debug\netcoreapp2.2\ProcessingFun.csprojAssemblyReference.cache
+c:\Users\fpettigrosso\ws\ProcessingFun\obj\Debug\netcoreapp2.2\ProcessingFun.csproj.CoreCompileInputs.cache
+c:\Users\fpettigrosso\ws\ProcessingFun\obj\Debug\netcoreapp2.2\ProcessingFun.AssemblyInfoInputs.cache
+c:\Users\fpettigrosso\ws\ProcessingFun\obj\Debug\netcoreapp2.2\ProcessingFun.AssemblyInfo.cs
