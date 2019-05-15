@@ -1,7 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.IO.MemoryMappedFiles;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
+using Share;
 
 class Program
 {
@@ -11,11 +13,14 @@ class Program
         using (MemoryMappedFile mmf = MemoryMappedFile.CreateNew("testmap", 10000))
         {
             bool mutexCreated;
+            var franco = new Person("franco Pettigrosso", 26);
+            BinaryFormatter bf = new BinaryFormatter();
             Mutex mutex = new Mutex(true, "testmapmutex", out mutexCreated);
             using (MemoryMappedViewStream stream = mmf.CreateViewStream())
             {
                 BinaryWriter writer = new BinaryWriter(stream);
-                writer.Write(1);
+                bf.Serialize()
+                //https://stackoverflow.com/questions/1446547/how-to-convert-an-object-to-a-byte-array-in-c-sharp
             }
             mutex.ReleaseMutex();
 
