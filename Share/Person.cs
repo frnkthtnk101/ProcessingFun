@@ -2,6 +2,7 @@
 
 namespace Share
 {
+    [Serializable]
     public class Person
     {
         private string _name;
